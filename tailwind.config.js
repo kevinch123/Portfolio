@@ -7,6 +7,7 @@ export default {
         roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
+        'neon-green': '#39FF14',
         'app-primary': '#295DFA',
         'app-secondary': '#4FE1D4',
         'app-white': '#FFFFFF',
@@ -28,6 +29,9 @@ export default {
           5: '#94AEFF',
           6: '#D0DCFF',
         },
+      },
+      margin: {
+        '-20px': '-20px',
       },
     },
   },
