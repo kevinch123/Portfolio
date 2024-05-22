@@ -22,8 +22,8 @@ export const About = () => {
           <div className='flex flex-col items-center lg:items-start text-center lg:text-left'>
             <h2 className='text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 text-white relative'>
               Encantado de conocerte,
-              <h3 className='text-neon-green'>Soy Kevin Chachinoy</h3>
             </h2>
+            <h3 className='text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 text-neon-green relative'>Soy Kevin Chachinoy</h3>
             <div className='max-w-xl'>
               <p className='mb-4 text-accent text-white'>
                 La ingeniería de software es mi pasión principal, pero también encuentro alegría y liberación en el gimnasio, donde desafío mis límites físicos levantando pesas y superando mis marcas personales. Para mí, la combinación de la mente ágil y la fuerza física crea un equilibrio perfecto que impulsa mi crecimiento personal y profesional. ¡Y estoy emocionado por seguir explorando y creciendo en ambos mundos!

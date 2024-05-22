@@ -16,7 +16,7 @@ import Skills from "./components/skills";
 
 function App() {
   return (
-    <div className='bg-black bg-no-repeat bg-cover overflow-hidden'
+    <div className='bg-customBlue bg-no-repeat bg-cover overflow-hidden'
     
     >
      <Banner/>

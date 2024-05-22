@@ -18,8 +18,6 @@ const Nav = () => {
             spy={true}
             offset={-200}
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
-            
-              
             <BiHome />
           </Link>
           <Link   
@@ -28,8 +26,6 @@ const Nav = () => {
             smooth={true}
             spy={true}
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center' >
-
-              
             <BiUser />
           </Link>
           <Link   
@@ -38,9 +34,7 @@ const Nav = () => {
             smooth={true}
             spy={true}
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center' >
-              
-          <BiBrain />
-
+            <BiBrain />
           </Link>
           <Link   
             to="Portfolio" 
@@ -48,7 +42,7 @@ const Nav = () => {
             smooth={true}
             spy={true}
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center' >
-            <BsClipboard2Data/>
+            <BsBriefcase/>
           </Link>
           <Link   
             to="Experience" 
@@ -56,8 +50,7 @@ const Nav = () => {
             smooth={true}
             spy={true}
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center' >
-              
-            <BsBriefcase/>
+            <BsClipboard2Data/>
           </Link>
           <Link   
             to="Contact" 
@@ -65,9 +58,7 @@ const Nav = () => {
             smooth={true}
             spy={true}
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center' >
-              
-          <FaAddressBook />
-
+            <FaAddressBook />
           </Link>
         </div>
       </div>

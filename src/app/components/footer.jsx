@@ -4,7 +4,7 @@ import { GiCog } from 'react-icons/gi';  // Un icono de ejemplo para reemplazar 
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 text-white bg-gray-900">
+    <footer className="footer footer-center p-10 text-white ">
       <aside className="mb-6">
         <GiCog size={50} className="inline-block text-current" />
         <p className="font-bold">

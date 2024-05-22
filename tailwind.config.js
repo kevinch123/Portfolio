@@ -7,6 +7,7 @@ export default {
         roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
+        'customBlue': '#250137',
         'neon-green': '#39FF14',
         'app-primary': '#295DFA',
         'app-secondary': '#4FE1D4',
