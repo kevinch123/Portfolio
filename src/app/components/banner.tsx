@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Banner = () => {
   return (
     <section className=' section min-h-[78vh] lg:min-h-[65vh] flex items-center ' id='Banner'>
-      <div className='container mx-20 mb-0.5'>
+      <div className='container mx-20 p-12'>
         <div className='flex flex-col gap-y-8 lg:flex-row'>
           <div className='flex-1 text-center font-secondary lg:text-left lg:items-center lg:gap-x-12'> 
             <h1 className='text-[30px] font-bold leading-[1] lg:text-[60px] text-white'>!Hola¡
