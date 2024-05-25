@@ -26,10 +26,6 @@ function App() {
      <Portfolio/>
      <Experience/>
      <Contact/>
-     <Footer/>
-
-
-    <div className="h-[400px]"></div>
     </div>
 
   );
