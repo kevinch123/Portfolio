@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactPaginate from 'react-paginate';
+import { motion } from 'framer-motion';
 
 const experiences = [
   {
@@ -46,20 +47,28 @@ const Experience = () => {
   };
 
   return (
-    <section className='section py-10 ' id='Experience'>
-      <div className='container mx-auto px-4 sm:px-6 lg:px-10'>
+    <section className="section py-10 bg-gradient-to-r to-gray-900 text-white w-full" id="Experience">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-10">
         <header className="text-center mb-8 mt-4">
-          <h1 className="text-4xl font-bold text-white mb-1">Portafolio</h1>
-          <h2 className="text-2xl font-semibold text-white mb-6">Proyectos</h2>
+          <h1 className="text-4xl font-bold text-white mb-1">Experiencia</h1>
+          <h2 className="text-2xl font-semibold text-white mb-6">Academico Laboral</h2>
         </header>
-        <div className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {currentExperiences.map((experience, index) => (
-            <div key={index} className='bg-gray-300 p-5 rounded-lg shadow-md'>
-              <h3 className='text-2xl font-semibold'>{experience.title}</h3>
-              <p className='text-gray-600'>{experience.company}</p>
-              <p className='text-gray-500 italic'>{experience.dates}</p>
-              <p className='text-gray-700 mt-2'>{experience.description}</p>
-            </div>
+            <motion.div
+              key={index}
+              className="bg-gray-800 p-5 rounded-lg shadow-lg"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <h3 className="text-2xl font-semibold">{experience.title}</h3>
+              <p className="text-gray-300">{experience.company}</p>
+              <p className="text-gray-200 italic">{experience.dates}</p>
+              <p className="text-gray-400 mt-2">{experience.description}</p>
+            </motion.div>
           ))}
         </div>
         <div className="flex justify-center sm:justify-end mt-8">

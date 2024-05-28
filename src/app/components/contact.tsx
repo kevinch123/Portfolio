@@ -42,7 +42,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <footer className='mt-8'>
+      <footer className='m-8 w-full py-5'>
         <Footer />
       </footer>
     </section>
