@@ -4,40 +4,40 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: 'Desarrollador Frontend',
-    company: 'Tech Company',
-    dates: 'Enero 2020 - Presente',
-    description: 'Desarrollo de aplicaciones web utilizando React y Tailwind CSS. Implementación de interfaces de usuario interactivas y responsivas.',
+    title: 'Estudiante de Ingeniería de Software',
+    company: 'Universidad Cooperativa de Colombia',
+    dates: 'Enero 2022 - Presente',
+    description: 'Actualmente cursando la carrera de Ingeniería de Software, adquiriendo habilidades en programación, desarrollo web y bases de datos.',
   },
   {
-    title: 'Desarrollador Frontend',
-    company: 'Tech Company',
-    dates: 'Enero 2020 - Presente',
-    description: 'Desarrollo de aplicaciones web utilizando React y Tailwind CSS. Implementación de interfaces de usuario interactivas y responsivas.',
+    title: 'Desarrollo Backend',
+    company: 'Universidad Cooperativa de Colombia',
+    dates: 'Enero 2022 - Mayo 2024',
+    description: 'Desarrollé un CRUD en Java junto con consultas SQL para geolocalización, mejorando el rendimiento y la eficiencia en la gestión de datos.',
   },
   {
-    title: 'Desarrollador Frontend',
-    company: 'Tech Company',
-    dates: 'Enero 2020 - Presente',
-    description: 'Desarrollo de aplicaciones web utilizando React y Tailwind CSS. Implementación de interfaces de usuario interactivas y responsivas.',
+    title: 'Portafolio Personal',
+    company: 'Universidad Cooperativa de Colombia',
+    dates: 'Enero 2022 - Mayo 2024',
+    description: 'Creación de un portafolio personal utilizando React y Vite, destacando mis proyectos y habilidades técnicas.',
   },
   {
-    title: 'Desarrollador Frontend',
-    company: 'Tech Company',
-    dates: 'Enero 2020 - Presente',
-    description: 'Desarrollo de aplicaciones web utilizando React y Tailwind CSS. Implementación de interfaces de usuario interactivas y responsivas.',
+    title: 'E-commerce',
+    company: 'Universidad Cooperativa de Colombia',
+    dates: 'Enero 2022 - Mayo 2022',
+    description: 'Desarrollé un CRUD web en Django y React para la gestión de productos de una fábrica de embutidos, optimizando los procesos de venta y administración.',
   },
   {
-    title: 'Desarrollador Frontend',
-    company: 'Tech Company',
-    dates: 'Enero 2020 - Presente',
-    description: 'Desarrollo de aplicaciones web utilizando React y Tailwind CSS. Implementación de interfaces de usuario interactivas y responsivas.',
+    title: 'Web de Películas',
+    company: 'Universidad Cooperativa de Colombia',
+    dates: 'Enero 2022 - Mayo 2024',
+    description: 'Creé un CRUD para la gestión de una página de películas utilizando Django y Angular, mejorando la experiencia del usuario y la administración de contenidos.',
   },
 ];
 
 const Experience = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const experiencesPerPage = 4; // Número de experiencias por página
+  const experiencesPerPage = 4;
   const offset = currentPage * experiencesPerPage;
   const currentExperiences = experiences.slice(offset, offset + experiencesPerPage);
   const pageCount = Math.ceil(experiences.length / experiencesPerPage);
@@ -51,7 +51,7 @@ const Experience = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-10">
         <header className="text-center mb-8 mt-4">
           <h1 className="text-4xl font-bold text-white mb-1">Experiencia</h1>
-          <h2 className="text-2xl font-semibold text-white mb-6">Academico Laboral</h2>
+          <h2 className="text-2xl font-semibold text-white mb-6">Académico y Profesional</h2>
         </header>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {currentExperiences.map((experience, index) => (
@@ -73,8 +73,8 @@ const Experience = () => {
         </div>
         <div className="flex justify-center sm:justify-end mt-8">
           <ReactPaginate
-            previousLabel={'before'}
-            nextLabel={'next'}
+            previousLabel={'Anterior'}
+            nextLabel={'Siguiente'}
             breakLabel={'...'}
             breakClassName={'break-me'}
             pageCount={pageCount}

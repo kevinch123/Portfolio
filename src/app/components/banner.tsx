@@ -42,10 +42,7 @@ const Banner = () => {
               <a href="https://github.com/kevinch123" className='text-white'>
                 <FaGithub />
               </a>
-              <a href="#" className='text-white'>
-                <FaFacebook />
-              </a>
-              <a href="https://www.linkedin.com/feed/" className='text-white'>
+              <a href="www.linkedin.com/in/kevin-chachinoy-54b615304" className='text-white'>
                 <FaLinkedin />
               </a>
             </div>
