@@ -1,29 +1,26 @@
-import { FaTwitter, FaYoutube, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import LogoH from '../../assets/img/LogoH.png';
 
 const Footer = () => {
   return (
-    <footer className="w-full flex flex-col md:flex-row justify-between items-center p-6 md:p-10 bg-gray-800 text-white">
-      <section className="flex items-center justify-center mb-7 md:mb-0 w-full md:w-auto">
-        <img src={LogoH} alt="Logo" className="w-32 h-24 md:w-40 md:h-32 mr-4 py-5" />
+    <footer className="w-full flex flex-col md:flex-row items-center justify-between p-6 md:p-10 bg-gray-800 text-white">
+      <section className="flex justify-center mb-5 md:mb-0 md:mr-4">
+        <img src={LogoH} alt="Logo" className="w-32 h-24 md:w-40 md:h-32 py-4" />
       </section>
-      <div className="text-center mb-4 md:mb-0">
+      <div className="text-center md:text-left mb-4 md:mb-0 md:mr-4">
         <p className="font-bold text-lg md:text-xl">
           KevinCH <br />Estudiante de Ingeniería de Software
         </p>
         <p className="text-sm md:text-base">Copyright © 2024 - All rights reserved</p>
       </div>
-      <section className="flex space-x-4 md:space-x-5">
-        <a href="https://twitter.com" aria-label="Twitter" className="hover:text-blue-400 transition-colors duration-200">
-          <FaTwitter size={24} className="fill-current" />
+      <div className="flex space-x-4">
+        <a href="https://github.com/kevinch123" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <FaGithub size={30} className="hover:text-gray-400" />
         </a>
-        <a href="https://youtube.com" aria-label="YouTube" className="hover:text-red-500 transition-colors duration-200">
-          <FaYoutube size={24} className="fill-current" />
+        <a href="https://www.linkedin.com/in/kevin-chachinoy-54b615304/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <FaLinkedin size={30} className="hover:text-gray-400" />
         </a>
-        <a href="https://facebook.com" aria-label="Facebook" className="hover:text-blue-600 transition-colors duration-200">
-          <FaFacebook size={24} className="fill-current" />
-        </a>
-      </section>
+      </div>
     </footer>
   );
 }

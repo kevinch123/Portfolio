@@ -30,9 +30,13 @@ export const About = () => {
                 "La programación me apasiona, pero lo que realmente me motiva es superarme cada día, ya sea escribiendo código o levantando pesas. Cada repetición en el gimnasio refleja mi constante deseo de superación en la vida."
               </p>
             </div>
-            <button className='btn btn-lg h-[50px] px-7 my-6 text-base rounded-full'>
+            <a
+              href="https://drive.google.com/file/d/1mhqhLzVdCv_uIz-h-UaZHooK6hkLGRjO/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className='btn btn-lg h-[50px] px-7 my-4 text-center rounded-full flex items-center justify-center'>
               Descargar CV
-            </button>
+            </a>
           </div>
         </div>
       </div>

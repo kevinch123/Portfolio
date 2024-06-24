@@ -4,6 +4,10 @@ import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
+  const scrollToContact = () => {
+    document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className='section min-h-[78vh] lg:min-h-[65vh] flex items-center' id='Banner'>
       <div className='container mx-auto p-6 lg:p-12'>
@@ -39,16 +43,19 @@ const Banner = () => {
             </p>
 
             <div className='flex text-[35px] gap-x-6 max-w-max mx-auto lg:mx-0 mb-5'>
-              <a href="https://github.com/kevinch123" className='text-white'>
+              <a href="https://github.com/kevinch123" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className='text-white'>
                 <FaGithub />
               </a>
-              <a href="www.linkedin.com/in/kevin-chachinoy-54b615304" className='text-white'>
+              <a href="#" className='text-white'>
+                <FaFacebook />
+              </a>
+              <a href="https://www.linkedin.com/in/kevin-chachinoy-54b615304/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className='text-white'>
                 <FaLinkedin />
               </a>
             </div>
 
             <div className='flex max-w-max gap-x-6 items-center mx-auto lg:mx-0'>
-              <button className='btn btn-lg h-[50px] px-8 text-base rounded-full '>Contáctame</button>
+              <button className='btn btn-lg h-[50px] px-8 text-base rounded-full' onClick={scrollToContact}>Contáctame</button>
             </div>
           </div>
 
